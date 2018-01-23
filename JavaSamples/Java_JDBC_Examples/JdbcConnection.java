@@ -11,9 +11,7 @@ public class JdbcConnection {
          
         try {
             Class.forName(oracle.jdbc.driver.OracleDriver);
-            Connection con = DriverManager.
-                getConnection(jdbcoraclethin@hostnameport numDB name
-                    ,user,password);
+            Connection con = DriverManager.getConnection(jdbcoraclethin@hostnameport numDB name,user,password);
             Statement stmt = con.createStatement();
             System.out.println(Created DB Connection....);
         } catch (ClassNotFoundException e) {
